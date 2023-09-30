@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int i=0,j=0,k=0,l=0;
+	char c;
+	printf("input: \n");
+	c=getchar();
+	while(c!='\n')
+{
+	if(c>='a'&&c<='z'||c>='A'&&c<='Z')i++;
+	else if(c>='0'&&c<='9')j++;
+	else if(c==' ')k++;
+	else l++;
+	c=getchar();
+}
+   printf("%d\n",i);
+   printf("%d\n",j);
+   printf("%d\n",k);
+   printf("%d\n",l);
+   
+return 0;
