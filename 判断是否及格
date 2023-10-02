@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int n,i;
+    for(i=0;i<5;i++)
+    {
+        printf("Enter grade: ");
+        scanf("%d",&n);
+        if(n<60)
+        {
+            printf("Fail\n");
+        }
+        else
+        {
+            printf("Pass\n");
+        }
+    }
+    return 0;
+
+}
