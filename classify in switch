@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(void)
+{
+    int i,n,blank = 0,brea = 0,digit = 0;
+    char ch;
+scanf("%D",&n);
+    for (i=1;i<=n;i++)
+    {
+        ch=getchar();
+        switch(ch)
+        {        case ' ':blank++;
+                break;
+            case'\n': brea++;
+                break;
+            case'0':case'1':
+                digit++;
+                break;
+        }
+    }
+    printf("blank=%d,brea=%d,digit=%d",blank,brea,digit);
+    return 0;
+}
