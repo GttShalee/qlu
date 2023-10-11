@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void)
+{
+    int n,t= 0 ;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        t++;
+        n=n/10;
+    }
+    printf("t=%d",t);
+}
+
