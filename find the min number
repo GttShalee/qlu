@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main (void)
+{
+    int n;
+    scanf("%d",&n);
+    
+    int num,i,min;
+    scanf("%d",&num);
+    min = num;
+    
+    for(i = 1; i < n; i++){
+        scanf("%d",&num);
+        //换值操作
+        if(min > num){
+            min = num;
+        }
+    }
+    
+ 
+    printf("min = %d\n",min);
+}
