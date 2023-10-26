@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(void)
+{
+    int m = 0;
+    int n = 0;
+    int i = 0;   /*定义两个中间量i，j作为存储单位*/
+    int j;
+    printf("Input m,n:\n");
+    scanf("%d%d",&m,&n);
+    if(m>n)      /*判断m，n大小*/
+    {
+        i = n;
+    }
+    else 
+    {
+        i = m;
+    }
+    while(m%i != 0||n%i != 0)
+    {
+        i--;
+    }
+    printf("%d %d",i,j=m*n/i);  //最大公倍数=二者乘积除以二者最小公因数
+    return 0;
+}
+
+
+
