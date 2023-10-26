@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main()
+{
+    char x;
+    do{
+        scanf("%c",&x);
+        if(x>='0' && x<='9'){
+            printf("%c",x);
+        }
+    }while(x!='#');
+    
+    return 0;
+}
+
